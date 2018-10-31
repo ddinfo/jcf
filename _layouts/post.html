@@ -1,58 +1,38 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<section class="post">
-{{ content }}
-</section>
-<section class="meta">
-<span class="author">
-  <a href="http://jcf.me">{{ site.author }}</a>
-</span>
-<span class="time">
-  /
-  <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
-</span>
-<br />
-<span class="license">
-  Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
-</span>
-{% if page.categories %}
-<span class="categories">
-  in categories
-  {% for cat in page.categories %}
-  <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
-  {% endfor %}
-</span>
-{% endif %}
-{% if page.tags %}
-<span class="tags">
-  tagged with 
-  {% for tag in page.tags %}
-  <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
-  {% endfor %}
-</span>
-{% endif %}
-</section>
-{% include comments.md %}
-<script type="text/javascript">
-$(function(){
-  $(document).keydown(function(e) {
-    var url = false;
-        if (e.which == 37 || e.which == 74) {  // Left arrow and J
-            {% if page.previous %}
-        url = '{{ site.url }}{{ page.previous.url }}';
-        {% endif %}
-        }
-        else if (e.which == 39 || e.which == 75) {  // Right arrow and K
-            {% if page.next %}
-        url = '{{ site.url }}{{ page.next.url }}';
-        {% endif %}
-        }
-        if (url) {
-            window.location = url;
-        }
-  });
-})
-</script>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="theme-color" content="#151515" />
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" type="text/css" href="/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/post.css">
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css"> {% if page.favicon %}
+    <link rel="icon" href={{page.favicon}}> {% else %}
+    <link rel="icon" href=/assets/img/fav/monkey.ico> {% endif %}
 
+</head>
+
+<body>
+    <div class="content-wrap">
+        <div class="content-main">
+            <div class="header">
+                <div class="nav-home">
+                    <a href="/">
+                        <span>{{ site.name }}</span>
+                        <img src="{{ site.logo }}" />
+                    </a>
+                </div>
+                <span class="post-title">{{ page.title }}</span>
+            </div>
+            <div class="post-content">
+                <div> {{ content }} </div>
+                {% include reward.html %}
+            </div>
+        </div>
+        {% include footer.html %} {% include cnzz.html %}
+</body>
+
+</html>
