@@ -25,19 +25,19 @@ defaults:
 
 navs:
   - 
-    href: /blog/
+    href: /blog
     label: 博客
   - 
     href: http://weibo.xudadi.com
     label: 微博
   -
-    href: https://status.xudadi.com
-    label: 状态
+    href: /archives
+    label: 归档
   -
     href: /feed.xml
     label: 订阅
   - 
-    href: /about/
+    href: /about
     label: 关于
 
 # ---------------- #
