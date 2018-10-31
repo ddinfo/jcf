@@ -1,0 +1,77 @@
+body {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.post-list {
+    margin: 60px 15% 60px;
+    padding: 40px 6% 50px;
+    background: white;
+    color: black;
+}
+
+.post-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.post-item {
+    font-size: 1em;
+    margin: 0px 10px;
+    padding: 20px 3% 0px;
+}
+
+.post-divider {
+    border-bottom: 1px dashed #d8d8d8;
+    margin: 20px 0 0;
+}
+
+.post-item:hover {
+    background: #eee;
+}
+
+.post-item .post-title {
+    font-size: 1em;
+    margin: 10px 0 20px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.post-item .post-excerpt {
+    font-weight: 300;
+    display: block;
+    color: #666;
+    line-height: 1.4em;
+    font-size: 0.68em;
+    margin: 16px 0 8px;
+    letter-spacing: 1.25px;
+}
+
+.post-item .post-excerpt p {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.post-item .post-date {
+    display: block;
+    position: relative;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 0.5em;
+    color: #444;
+    font-style: oblique;
+}
+
+@media screen and (min-width: 1800px) {
+    .post-list {
+        margin: 60px 24% 60px;
+        padding: 40px 6% 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .post-list {
+        margin: 30px 0 60px;
+        padding: 40px 1% 30px;
+    }
+}
