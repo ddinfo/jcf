@@ -25,7 +25,7 @@ defaults:
 
 navs:
   - 
-    href: /blog/
+    href: /
     label: 博客
   - 
     href: /web_lab/
