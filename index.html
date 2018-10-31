@@ -1,13 +1,52 @@
-<!DOCTYPE html>
-<html>
+---
+title: 九层风
+---
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
 <head>
+	<style type="text/css">
+	body{
+		margin-left: 128px;
+		margin-right: 128px;
+		margin-top: 36px;
+		margin-bottom: 128px
+	}
+	a{
+		font-family: Arial;
+		font-size: 18px;
 
-<title>旧尘封</title>
 
+	}
+	a:link{
+		color:#339999;
+		text-decoration: none;
+	}
+	a:visited{
+		color:#339999;
+		text-decoration: none;
+	}
+	a:hover{
+		color:gray;
+		text-decoration: underline;
+
+	}
+	</style>
 </head>
+<title>九层风</title>
 
-<body>
-<h1 align="center">Coming soon</h1>
-</body>
-</html>
+<h1>九层风</h1>
 
+<p ><b>
+	最新文章
+</b></p>
+
+<ul>
+	{% for post in site.posts %}
+	　　<li>
+		<a href="{{ site.baseurl }}{{ post.url }}" target="_blank">
+			{{ post.title }}</a>
+			|{{ post.date | date_to_string }}
+		</li>
+		{% endfor %}
+	</ul>
