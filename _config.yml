@@ -31,7 +31,10 @@ navs:
     href: http://weibo.xudadi.com
     label: 微博
   -
-    href: /feed/
+    href: https://status.xudadi.com
+    label: 状态
+  -
+    href: /feed.xml
     label: 订阅
   - 
     href: /about/
