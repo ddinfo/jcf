@@ -1,8 +1,8 @@
 ---
 layout: post
+title: 归档
 permalink: /archives.html
 ---
-
 {% for post in site.posts %}
     {% assign year = post.date | date: '%Y' %}
     {% assign nyear = post.next.date | date: '%Y' %}
