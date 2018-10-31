@@ -11,7 +11,7 @@ name: jcf
 bio: jcf.me
 url: http://jcf.me/
 email: xudadi811@gmail.com
-logo: "/asset/img/def/logo.jpg"
+logo: "/assets/img/def/logo.jpg"
 fav: "/favicon.ico"
 
 defaults:
