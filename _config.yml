@@ -7,12 +7,10 @@ markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
 
-name: 写代码的猴子
-bio: 当猴子不写代码时，他在写些什么
-logo: "/img/monkey.jpg"
+name: jcf
+bio: jcf.me
 url: http://jcf.me/
-email: im.houzi@gmail.com
-fav: "/favicon.ico"
+email: xudadi811@gmail.com
 
 defaults:
  -
@@ -25,7 +23,7 @@ defaults:
 
 navs:
   - 
-    href: /
+    href: /blog/
     label: 博客
   - 
     href: /web_lab/
@@ -40,7 +38,6 @@ navs:
 # ---------------- #
 #      Socials     #
 # ---------------- #
-github_id: laobie
-weibo_id: xdmdhz
-zhihu_id: jaeger
-twitter_id: jaeger_chen
+github_id: xudadi
+weibo_id: xudadi811
+twitter_id: xudadi
