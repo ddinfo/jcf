@@ -9,8 +9,7 @@ show_ad: false
 
 {% for category in site.categories %}
 <div class="category-item">
-    <div class="category-title">{{ category | first | capitalize }}</div>
-    <div class="category-count">{{ category | last | size }}</div>
+    <div class="category-title">{{ category | first | capitalize }}丨{{ category | last | size }}</div>
 </div>
 {% for post in category.last %}
 <div class="article-item">
