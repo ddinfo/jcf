@@ -13,7 +13,8 @@ url: http://jcf.me/
 email: xudadi811@gmail.com
 logo: "/assets/img/def/logo.jpg"
 fav: "/favicon.ico"
-site.name: 许大地
+title: 许大地博客
+description: 许大地博客
 
 defaults:
  -
