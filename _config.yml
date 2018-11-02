@@ -27,7 +27,7 @@ defaults:
 
 navs:
   - 
-    href: /blog
+    href: /default.html
     label: 博客
   - 
     href: http://weibo.xudadi.com
